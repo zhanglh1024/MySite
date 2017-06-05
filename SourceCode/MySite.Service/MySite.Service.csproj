@@ -40,13 +40,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdvertService.cs" />
+    <Compile Include="ArtTypeService.cs" />
     <Compile Include="BaseService.cs" />
+    <Compile Include="CarouService.cs" />
+    <Compile Include="FrLinkService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MySite.Core\MySite.Core.csproj">
       <Project>{596A017E-2524-4800-9BD4-171193D5F042}</Project>
       <Name>MySite.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MySite.Model\MySite.Model.csproj">
+      <Project>{396c3673-2017-4918-9c7c-02f1c81a2dcf}</Project>
+      <Name>MySite.Model</Name>
     </ProjectReference>
     <ProjectReference Include="..\Titan\Titan.csproj">
       <Project>{0bc8d532-2680-4634-add1-46392736e193}</Project>
