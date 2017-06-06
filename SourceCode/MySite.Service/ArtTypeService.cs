@@ -51,7 +51,7 @@ namespace MySite.Service
         /// </summary>
         /// <param name="artTypeId">类别标识</param>
         /// <returns></returns>
-        public ArtType GetFrLink(string artTypeId)
+        public ArtType GetArtType(string artTypeId)
         {
             var art = new ArtType { ArtTypeId = artTypeId };
             return Session.Select(art) ? art : null;
@@ -64,7 +64,7 @@ namespace MySite.Service
         /// <param name="pageIndex">当前页,pageSize和pageIndex只要有一个是null,则返回所有记录</param>
         /// <param name="totalCount">总记录数</param>
         /// <returns></returns>
-        public List<ArtType> GetFrLinkList(int? pageSize, int? pageIndex, ref int totalCount)
+        public List<ArtType> GetArtTypeList(int? pageSize, int? pageIndex, ref int totalCount)
         {
             var query = new QueryExpression();
             query.EntityType = typeof(ArtType);

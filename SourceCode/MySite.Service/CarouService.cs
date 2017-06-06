@@ -48,7 +48,7 @@ namespace MySite.Service
         /// </summary>
         /// <param name="carouselId">走马灯标识</param>
         /// <returns></returns>
-        public Carousel GetFrLink(string carouselId)
+        public Carousel GetCarousel(string carouselId)
         {
             var ca = new Carousel { CarouselId = carouselId };
             return Session.Select(ca) ? ca : null;
@@ -63,7 +63,7 @@ namespace MySite.Service
         /// <param name="pageIndex">当前页,pageSize和pageIndex只要有一个是null,则返回所有记录</param>
         /// <param name="totalCount">总记录数</param>
         /// <returns></returns>
-        public List<Carousel> GetFrLinkList(string type, int status, int? pageSize, int? pageIndex, ref int totalCount)
+        public List<Carousel> GetCarouselList(string type, int status, int? pageSize, int? pageIndex, ref int totalCount)
         {
             var query = new QueryExpression();
             query.EntityType = typeof(Carousel);

@@ -41,9 +41,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdvertService.cs" />
+    <Compile Include="ArticleService.cs" />
     <Compile Include="ArtTypeService.cs" />
     <Compile Include="BaseService.cs" />
     <Compile Include="CarouService.cs" />
+    <Compile Include="CommentService.cs" />
+    <Compile Include="DailyInfoService.cs" />
     <Compile Include="FrLinkService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
